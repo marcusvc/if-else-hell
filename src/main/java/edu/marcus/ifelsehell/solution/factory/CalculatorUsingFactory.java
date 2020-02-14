@@ -1,7 +1,6 @@
 package edu.marcus.ifelsehell.solution.factory;
 
 import edu.marcus.ifelsehell.Calculator;
-import edu.marcus.ifelsehell.operation.Operation;
 
 public class CalculatorUsingFactory implements Calculator {
 	
@@ -12,7 +11,7 @@ public class CalculatorUsingFactory implements Calculator {
 	 */
 	@Override
 	public int calculate(int a, int b, String operator) {
-		Operation operation = OperationFactory.getOperation(operator);
+		var operation = OperationFactory.getOperation(operator);
 		return operation.apply(a, b);
 	}
 

@@ -6,7 +6,7 @@ public class CalculatorUsingOperatorEnumWithNoOperationLogic implements Calculat
 
 	@Override
 	public int calculate(int a, int b, String operator) {
-		OperatorEnumWithNoOperationLogic enumm = OperatorEnumWithNoOperationLogic.valueOf(operator);
+		var enumm = OperatorEnumWithNoOperationLogic.valueOf(operator);
 		return enumm.getOperation().apply(a, b);
 	}
 	

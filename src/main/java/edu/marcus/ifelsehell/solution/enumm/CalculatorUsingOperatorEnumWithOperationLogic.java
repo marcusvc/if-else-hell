@@ -6,7 +6,7 @@ public class CalculatorUsingOperatorEnumWithOperationLogic implements Calculator
 
 	@Override
 	public int calculate(int a, int b, String operator) {
-		OperatorEnumWithOperationLogic enumm = OperatorEnumWithOperationLogic.valueOf(operator);
+		var enumm = OperatorEnumWithOperationLogic.valueOf(operator);
 		return enumm.apply(a, b);
 	}
 
